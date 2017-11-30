@@ -1,0 +1,106 @@
+---
+title: "Presentation"
+author: "<Your Name>"
+date: "<current date>"
+output: ioslides_presentation
+bibliography: bibliography.bib
+---
+
+```{r setup, include=FALSE}
+# Include options and packages required to generate this report
+
+# Install/Load packages
+pacman::p_load(citr, magrittr, knitr, ggplot2)
+
+# Configure default options for knitr code chunks
+knitr::opts_chunk$set(fig.width=5, fig.height=2.5, fig.pos='h', fig.align='center', echo=FALSE)
+```
+
+# Overview
+
+- Introduction
+- Methods
+- Results
+- Conclusion
+
+# Introduction
+
+## Problem statement
+
+<!-- the identification of a relevant topic/ area of interest to you -->
+
+Response goes here...
+
+<!-- Example bullets -->
+
+- Bullet 1
+- Bullet 2
+- Bullet 3
+
+## Background
+<!-- a description a viable and thought-provoking research question supported by previous research on the topic in the primary literature -->
+
+Response goes here...
+
+## Hypothesis
+<!-- a clear, and testable hypothesis based on evidence in the literature -->
+
+Response goes here...
+
+# Methods
+
+```{r libraries, include=FALSE}
+library(magrittr)
+library(knitr)
+library(ggplot2)
+```
+
+## About
+
+Data gathering, manipulation, and statistical analysis were conducted with the R Statistical Software [@r2016software]. 
+
+## Data source
+<!-- the identification of an adequate corpus resource (existing or to be developed) to address the research question;  evaluating the strengths and weakness of this particular resource, -->
+
+Response goes here...
+
+## Statistical approach
+<!-- reference to and use of the appropriate analytical and/or statistical methods to assess the evidence, -->
+
+Response goes here...
+
+# Results
+
+## Table
+
+Here is example code for a table with a caption.
+
+```{r table1, results='asis', echo=FALSE}
+cars %>% head %>% kable(caption = "Preview of the `cars` dataset.")
+```
+
+## Figure
+
+Here is example code for a figure with a caption.
+
+```{r plot1, fig.cap="Plot of the `cars` dataset", echo=FALSE}
+ggplot(cars, aes(x = dist, y = speed)) + geom_point() + geom_smooth(method = "lm")
+```
+
+# Discussion
+
+## Findings
+<!-- and a review and discussion of the findings -->
+
+Response goes here...
+
+# Conclusion
+
+## Round up
+
+- Main point 1
+- Main point 2
+- ...
+
+## References
+
