@@ -14,4 +14,6 @@ If this file includes the `.md` extension, it can take full advantage of the Mar
 
 **Bold text**, *italics*, ~~strikethrough~~, etc.
 
-Follow this link for [more on Markdown syntax options](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+Follow this link for [more on Markdown s
+
+yntax options](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
